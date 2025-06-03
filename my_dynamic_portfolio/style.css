@@ -1,0 +1,152 @@
+/*style.css*/
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    background-color: gray;
+    background-image: url(images/background1.jpg);background-size: 101%;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    padding-bottom: 50px; /* Space for footer */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #000000;
+}
+
+header {
+    background-color: rgb(37, 34, 34);
+    color: white;
+    padding: 25px;
+    text-align: center;
+     margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    max-width: 800px;
+    margin: 20px auto;
+    
+}
+
+header img {
+    border-radius: 52%;
+    border: 4px solid rgb(17, 16, 16);
+    margin-bottom: 10px;
+}
+
+main {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: rgba(148, 135, 111, 0.911);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode section {
+    background-color:white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+h1, h2, h3 {
+    color: #fffcfcc5; /* Darker blue for headings */
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #000000;
+}
+
+.skill-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill-btn {
+    background-color: #9ea552; /* Green button */
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.skill-btn:hover {
+    background-color: black;
+    transform: translateY(-2px); /* Simple hover effect */
+}
+
+#skill-description {
+    margin-top: 15px;
+    font-style: italic;
+    min-height: 20px; /* Prevent layout shift */
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+     background-color: rgb(37, 34, 34);
+    color: white;
+    position: relative;
+    bottom: 0;
+    border-width: 65%;
+    width: 65%;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+     margin: 20px auto;
+}
+
+#themeToggle {
+    background-color: #000000; /* Yellow button */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#themeToggle:hover {
+    background-color: #a09e99;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: left;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+body.dark-mode .project-card {
+    background-color: white;
+    border-color: white;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+    color: rgb(0, 0, 0);
+    margin-top: 0;
+}
+body.dark-mode .project-card h3 {
+    color: #87ceeb;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dynamic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/picturee1.jpg" width="15%" height=45% alt=" picture of Danladi Eshiomokhe Emmanuel">
+        <h1><i>Hola!, I'm Danladi Eshiomokhe Emmanuel!, 24/14817</h1></i>
+        <p>Fueled by passion for web development and crafting immersive experiences</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm passionate about exploring emerging technologies and turning innovative ideas into reality through code. My expertise lies in crafting intuitive, responsible web applications that deliver seamless user experiences</p>
+        </section>
+
+        <section id="multimedia-showcase">
+            <h2>Multimedia Showcase</h2>
+            <h3>My Audio Greeting:</h3>
+            <audio controls>
+                <source src="images/logo_opener(chosic.com).mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>A Quick Project Video:</h3>
+            <video controls width="320" height="240">
+                <source src="images/My_project_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="interactive-skills">
+            <h2>My Skills</h2>
+            <div class="skill-buttons">
+                <button class="skill-btn" data-skill="HTML">HTML</button>
+                <button class="skill-btn" data-skill="CSS">CSS</button>
+                <button class="skill-btn" data-skill="JavaScript">JavaScript</button>
+            </div>
+            <p id="skill-description">Explore our skills to discover more</p>
+        </section>
+
+        <section id="portfolio-list">
+            <h2>My Projects</h2>
+            <div id="projects-container">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Danladi Eshiomokhe Emmanuel. All rights reserved.</p>
+        <button id="themeToggle">Toggle Dark Mode</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
